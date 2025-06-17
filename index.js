@@ -12,6 +12,7 @@ const energyRoutes = require('./routes/energy');   // <-- add this
 
 app.use('/api/mood', moodRoutes);
 app.use('/api/recommendations', recommendationRoutes);
+app.use('/api/energy', energyRoutes);              // <-- add this
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
