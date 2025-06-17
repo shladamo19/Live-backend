@@ -8,6 +8,7 @@ app.use(bodyParser.json());
 
 const moodRoutes = require('./routes/mood');
 const recommendationRoutes = require('./routes/recommendations');
+const energyRoutes = require('./routes/energy');   // <-- add this
 
 app.use('/api/mood', moodRoutes);
 app.use('/api/recommendations', recommendationRoutes);
