@@ -1,0 +1,13 @@
+const express = require('express');
+const router = express.Router();
+
+router.get('/', (req, res) => {
+  const recommendations = [
+    { id: 1, activity: 'Meditate for 10 minutes' },
+    { id: 2, activity: 'Listen to your favorite music' },
+    { id: 3, activity: 'Go for a walk outside' },
+  ];
+  res.json(recommendations);
+});
+
+module.exports = router;
